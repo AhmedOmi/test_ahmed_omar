@@ -1,0 +1,42 @@
+{
+  "name": "@gastromatic/movie-test-api",
+  "private": true,
+  "license": "ISC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "author": "",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon --legacy-watch src/server.ts --exec ts-node src/server.ts",
+    "build": "tsc",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "jest",
+    "serve-debug": "nodemon --inspect=0.0.0.0:9229 --watch dist dist/server.js"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.9",
+    "@types/mongoose": "^5.7.15",
+    "@types/node": "^12.12.31",
+    "apollo-server": "^2.13.0",
+    "bcryptjs": "^2.4.3",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.9.12",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/lodash": "^4.14.172",
+    "@types/mocha": "^9.0.0",
+    "jest": "^25.5.4",
+    "mongodb-memory-server": "^6.5.2",
+    "prettier": "^2.0.2",
+    "ts-jest": "^25.2.1"
+  }
+}
