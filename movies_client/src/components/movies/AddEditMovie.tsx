@@ -15,10 +15,6 @@ interface Props {
 }
 function AddEditMovie(props: Props) {
   const [movieToBeEdited, setMovieToBeEdited] = useState<Movie>(props.movie)
-  const [rate, setRate] = useState<RatingProps>({
-    rating: props.movie.rating,
-    maxRating: 5,
-  })
   function onAddEditMovie() {
     if (props.isEdit) {
       const updatedMovie = {
